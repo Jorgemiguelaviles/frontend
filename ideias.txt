@@ -1,0 +1,3 @@
+- arrumar a logica do formulario por meio de onBlur
+- conexão frontend/backend
+- conexão backend/json/banco de dados

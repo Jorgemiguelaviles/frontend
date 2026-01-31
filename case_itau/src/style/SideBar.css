@@ -1,0 +1,94 @@
+/* ================= BOTÃO DE ABRIR ================= */
+
+.sidebar-toggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1001;
+  background-color: #ff6200;
+  color: #ffffff;
+  border: none;
+  padding: 14px 18px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+/* ================= SIDEBAR BASE ================= */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+
+  width: 320px; /* ⬅️ maior no desktop */
+  background-color: #ffffff;
+  box-shadow: 2px 0 16px rgba(0, 0, 0, 0.18);
+
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+
+  padding: 32px;
+  z-index: 1000;
+}
+
+/* Estado aberto */
+.sidebar--open {
+  transform: translateX(0);
+}
+
+/* ================= CONTEÚDO ================= */
+
+.sidebar-title {
+  margin-bottom: 32px;
+  font-size: 1.6rem; /* ⬅️ título maior */
+  font-weight: 700;
+  color: #ff6200;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 24px; /* ⬅️ mais respiro */
+}
+
+.sidebar-link {
+  text-decoration: none;
+  color: #333333;
+  font-size: 1.15rem; /* ⬅️ texto maior */
+  font-weight: 600;
+  transition: color 0.2s ease, transform 0.15s ease;
+}
+
+.sidebar-link:hover {
+  color: #ff6200;
+  transform: translateX(4px);
+}
+
+/* ================= BOTÃO FECHAR ================= */
+
+.sidebar-close {
+  background: none;
+  border: none;
+  font-size: 1.6rem; /* ⬅️ mais acessível */
+  cursor: pointer;
+  margin-bottom: 24px;
+}
+
+/* ================= RESPONSIVO (MOBILE) ================= */
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 80vw; /* ⬅️ ocupa 80% da tela */
+    padding: 24px;
+  }
+
+  .sidebar-title {
+    font-size: 1.4rem;
+  }
+
+  .sidebar-link {
+    font-size: 1.1rem;
+  }
+}

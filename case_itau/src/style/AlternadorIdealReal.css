@@ -1,0 +1,28 @@
+.alternador-container {
+  margin-top: 2rem;
+  border-radius: 8px;
+}
+
+.alternador-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.alternador-header h3 {
+  min-width: 200px;
+  text-align: center;
+}
+
+.alternador-header button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.alternador-conteudo {
+  transition: opacity 0.3s ease;
+}

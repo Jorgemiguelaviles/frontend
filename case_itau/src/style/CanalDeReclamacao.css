@@ -1,0 +1,377 @@
+/* ================= RESET LOCAL ================= */
+* {
+  box-sizing: border-box;
+}
+
+/* ================= CONTAINER ================= */
+.header-container {
+  width: 100%;
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 48px 24px;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #1a1a1a;
+  background-color: #ffffff;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+
+.canal-container {
+  min-height: calc(74vh - 160px);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 48px 24px;
+  background-color: #f7f7f7;
+}
+
+.canal-card {
+  width: 100%;
+  max-width: 90rem;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* ================= HEADER ================= */
+.canal-header {
+  margin-bottom: 2.5rem;
+  border-left: 4px solid #ff7200;
+  padding-left: 1.2rem;
+}
+
+.canal-title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #111111;
+  margin-bottom: 0.6rem;
+}
+
+.canal-description {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  color: #6b7280;
+  max-width: 48rem;
+}
+
+/* ================= FORM GRID ================= */
+.canal-form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+/* ================= INPUTS ================= */
+.canal-input {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 1.05rem;
+  font-family: inherit;
+  color: #1f2937;
+
+  background-color: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+
+  outline: none;
+  transition: 
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.canal-input::placeholder {
+  color: #9ca3af;
+}
+
+.canal-input:focus {
+  border-color: #f97316;
+  box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.15);
+}
+
+/* ================= TEXTAREA ================= */
+.canal-textarea {
+  width: 100%;
+  min-height: 220px;
+
+  padding: 16px 18px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  font-family: inherit;
+  color: #1f1f1f;
+
+  background-color: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+
+  resize: vertical;
+  outline: none;
+
+  transition: 
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.canal-textarea::placeholder {
+  font-size: 1rem;
+  color: #9ca3af;
+}
+
+.canal-textarea:focus {
+  border-color: #f97316;
+  box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.15);
+}
+
+/* ================= UPLOAD ================= */
+.canal-upload {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.canal-file-input {
+  display: none;
+}
+
+.canal-upload-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Botões base */
+.canal-upload-button,
+.canal-remove-button {
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+/* Anexar */
+.canal-upload-button {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+.canal-upload-button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Remover */
+.canal-remove-button {
+  background-color: #dc2626;
+  color: #ffffff;
+}
+
+.canal-remove-button:hover:not(:disabled) {
+  background-color: #b91c1c;
+}
+
+.canal-remove-button:disabled {
+  background-color: #7f1d1d;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Infos */
+.canal-upload-hint {
+  font-size: 0.95rem;
+  color: #6b7280;
+}
+
+.canal-file-name {
+  font-size: 0.95rem;
+  color: #374151;
+  font-weight: 500;
+}
+
+/* ================= SUBMIT ================= */
+.canal-submit {
+  margin-top: 8px;
+  padding: 16px;
+  border-radius: 10px;
+  border: none;
+  background-color: #16a34a;
+  color: #ffffff;
+  font-size: 1.15rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 
+    background-color 0.2s ease,
+    transform 0.1s ease;
+}
+
+.canal-submit:hover:not(:disabled) {
+  background-color: #15803d;
+  transform: translateY(-1px);
+}
+
+.canal-submit:disabled {
+  background-color: #14532d;
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* ================= RESPONSIVO ================= */
+@media (max-width: 768px) {
+  .header-container {
+    padding: 32px 16px;
+  }
+
+  .canal-container {
+    padding: 24px 16px;
+  }
+
+  .canal-card {
+    padding: 24px 20px;
+  }
+
+  .canal-title {
+    font-size: 1.9rem;
+  }
+
+  .canal-description {
+    font-size: 1.1rem;
+  }
+
+  .canal-upload-actions {
+    flex-direction: column;
+  }
+
+  .canal-upload-button,
+  .canal-remove-button {
+    width: 100%;
+  }
+
+  .canal-submit {
+    font-size: 1.05rem;
+    padding: 16px;
+  }
+}
+
+.canal-error {
+  color: #d32f2f;
+  font-size: 0.85rem;
+  margin-top: 4px;
+  display: block;
+}
+
+.canal-error-central {
+  margin-top: 12px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.canal-submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.backend-error-box {
+  background-color: #fff5f5;
+  border-left: 4px solid #e53e3e;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.backend-error-box h4 {
+  color: #c53030;
+  margin: 0 0 5px 0;
+  font-size: 0.9rem;
+}
+
+.backend-error-box ul {
+  margin: 0;
+  padding-left: 20px;
+  color: #2d3748;
+  font-size: 0.85rem;
+}
+
+/* ================= RESULTADOS BACKEND ================= */
+.canal-response {
+  border-top: 8px solid #16a34a;
+  margin-top: 40px;
+}
+
+.response-title {
+  color: #111111;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.classificacao-secao {
+  margin-bottom: 24px;
+}
+
+.classificacao-subtitulo {
+  font-size: 1rem;
+  color: #4b5563;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+/* ================= BADGES (TAGS) ================= */
+.badge-container {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.badge-primaria {
+  background-color: #ff7200; /* Laranja Itaú */
+  color: white;
+}
+
+.badge-secundaria {
+  background-color: #e5e7eb;
+  color: #374151;
+  border: 1px solid #d1d5db;
+}
+
+.badge-terciaria {
+  background-color: #f3f4f6;
+  color: #6b7280;
+  font-style: italic;
+}
+
+/* ================= JSON DETAILS ================= */
+.json-details {
+  margin-top: 32px;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 16px;
+}
+
+.json-details summary {
+  cursor: pointer;
+  color: #2563eb;
+  font-weight: 600;
+  outline: none;
+}
+
+.json-display {
+  background: #1e1e1e;
+  color: #dcdcdc;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  overflow-x: auto;
+  margin-top: 12px;
+}
