@@ -14,10 +14,18 @@ vi.mock("react-router-dom", () => ({
   ),
 
   Route: (props: any) => {
-    routeSpy(props);
-    return <div data-testid="route" />;
-  }
+  routeSpy(props);
+
+  return (
+    <div data-testid="route">
+      {props.element}
+      {props.children}
+    </div>
+  );
+}
+
 }));
+
 
 vi.mock("../interfaces/components/MoldeSystem", () => ({
   default: () => <div data-testid="molde-system" />
