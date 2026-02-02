@@ -1,4 +1,4 @@
-import { type ReclamacaoForm } from "../validators/CanalDaReclamacaoValidator";
+import { type ReclamacaoForm } from "./validators/CanalDaReclamacaoValidator";
 
 export async function enviarReclamacao(
   dados: ReclamacaoForm,

@@ -1,10 +1,10 @@
 import type { JSX } from "react";
-import ArquiteturaDeSoftware from "../pages/ArquiteturaDeSoftware";
-import CanalDeReclamacao from "../pages/CanalDeReclamacao";
-import Componentizacao from "../pages/Componentizacao";
-import Fluxos from "../pages/Fluxos";
-import HardSkills from "../pages/HardSkills";
-import Ia from "../pages/Ia";
+import ArquiteturaDeSoftware from "../../interfaces/pages/ArquiteturaDeSoftware";
+import CanalDeReclamacao from "../../interfaces/pages/CanalDeReclamacao";
+import Componentizacao from "../../interfaces/pages/Componentizacao";
+import Fluxos from "../../interfaces/pages/Fluxos";
+import HardSkills from "../../interfaces/pages/HardSkills";
+import Ia from "../../interfaces/pages/Ia";
 
 export interface PageRoute {
   path: string;

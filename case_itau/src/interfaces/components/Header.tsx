@@ -1,4 +1,4 @@
-import "../style/Header.css";
+import "../../shared/style/Header.css";
 
 interface HeaderProps {
   onToggleSidebar: () => void;

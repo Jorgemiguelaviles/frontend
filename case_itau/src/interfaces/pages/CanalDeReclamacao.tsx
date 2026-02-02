@@ -1,6 +1,6 @@
 import { useRef } from "react";
-import { useCanalDeReclamacao } from "../hooks/useCanalDeReclamacao";
-import "../style/CanalDeReclamacao.css";
+import { useCanalDeReclamacao } from "../../domain/hooks/useCanalDeReclamacao";
+import "../../shared/style/CanalDeReclamacao.css";
 
 function CanalDeReclamacao() {
   const fileInputRef = useRef<HTMLInputElement | null>(null);
@@ -155,6 +155,7 @@ function CanalDeReclamacao() {
               {renderClassificacao(respostaBack.resultado?.classificacao?.digital, "Análise do Formulário Digitado")}
               {renderClassificacao(respostaBack.resultado?.classificacao?.fisica, "Análise do Anexo (OCR)")}
             </div>
+            
 
             <details className="json-details">
               <summary>Ver dados técnicos (JSON)</summary>

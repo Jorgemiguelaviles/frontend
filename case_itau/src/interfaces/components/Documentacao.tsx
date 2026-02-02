@@ -1,4 +1,4 @@
-import "../style/DocumentacaoProps.css";
+import "../../shared/style/DocumentacaoProps.css";
 
 interface DocumentacaoProps {
   titulo: string;

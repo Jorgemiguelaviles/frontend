@@ -1,5 +1,5 @@
 import Documentacao from "./Documentacao";
-import caminhoImagem from '../assets/infraestrtura/imagem_estrutura.png'
+import caminhoImagem from '../../assets/infraestrtura/imagem_estrutura.png'
 
 function ComponentizacaoReal() {
   return (

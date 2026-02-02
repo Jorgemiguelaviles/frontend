@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { pages } from "./routes";
-import MoldeSystem from "./components/moldeSystem";
+import { pages } from "./application/routes";
+import MoldeSystem from "./interfaces/components/MoldeSystem";
 
 export default function App() {
   return (

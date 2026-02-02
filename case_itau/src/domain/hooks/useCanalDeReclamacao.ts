@@ -3,7 +3,7 @@ import { useState } from "react";
 import {
   validarReclamacao,
   type ReclamacaoForm,
-} from "../validators/CanalDaReclamacaoValidator";
+} from "../services/validators/CanalDaReclamacaoValidator";
 import { enviarReclamacao } from "../services/serviceSubmit";
 
 const resolver: Resolver<ReclamacaoForm> = async (values) => {

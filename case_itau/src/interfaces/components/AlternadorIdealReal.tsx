@@ -1,5 +1,5 @@
 import { useState, type ReactNode } from "react";
-import "./../style/AlternadorIdealReal.css";
+import "../../shared/style/AlternadorIdealReal.css";
 
 interface AlternadorIdealRealProps {
   ideal: ReactNode;

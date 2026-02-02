@@ -3,8 +3,8 @@ import Header from "./Header";
 import SideBar from "./SideBar";
 import Footer from "./Footer";
 import { Outlet } from "react-router-dom";
-import "../style/MoldeSystem.css";
-import { pages } from "../routes";
+import "../../shared/style/MoldeSystem.css";
+import { pages } from "../../application/routes";
 
 function MoldeSystem() {
   const [sidebarOpen, setSidebarOpen] = useState(false);

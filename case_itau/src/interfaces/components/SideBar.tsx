@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import "../style/SideBar.css";
-import type { PageRoute } from "../routes/index";
+import "../../shared/style/SideBar.css";
+import type { PageRoute } from "../../application/routes/index";
 
 interface SideBarProps {
   open: boolean;

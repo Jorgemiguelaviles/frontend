@@ -1,4 +1,4 @@
-import Documentacao from "../components/Documentacao";
+import Documentacao from "./Documentacao";
 
 function ComponentizacaoIdeal() {
   return (
